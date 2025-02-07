@@ -1,12 +1,21 @@
 package main
 
-import "fmt"
+// Importing fmt
+import (
+	"fmt"
+)
 
+// Calling main
 func main() {
-	var x string = "привет!!!!!!!!!!!!!!!"
-	fmt.Println(x)
-	var s int = 20
-	var r int = 20
-	var a int = s * r
-	fmt.Println(a)
+	otlik()
+	add(5, 5)
+
+}
+func otlik() {
+	fmt.Println("Отклик функции.")
+}
+func add(x int, y int) {
+	var z = x + y
+	fmt.Println("x + y =", z)
+	fmt.Println("x = ", x, "\n ", "y =", y)
 }
